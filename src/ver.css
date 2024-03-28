@@ -1,0 +1,56 @@
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center; /* จัดตำแหน่งของส่วนหลักตามศูนย์กลาง */
+  }
+  
+  .pin-input {
+    display: flex;
+    justify-content: center; /* จัดกล่อง pin-input ตามศูนย์กลาง */
+  }
+  
+  .pin-input input {
+    width: 40px; /* ปรับขนาดของ input */
+    height: 40px; /* ปรับขนาดของ input */
+    text-align: center; /* จัดให้ตัวเลขอยู่ตรงกลาง */
+    font-size: 1.5em; /* ปรับขนาดตัวอักษร */
+    border: 1px solid #ccc; /* เพิ่มเส้นขอบ */
+    margin: 0 5px; /* กำหนดระยะห่างระหว่างกล่อง input */
+    border-radius: 4px; /* เพิ่มขอบมน */
+  }
+  
+  .pin-input input:focus {
+    outline: none; /* ลบเส้นขอบเมื่อมีการโฟกัส */
+    border-color: #007bff; /* เปลี่ยนสีเส้นขอบเมื่อมีการโฟกัส */
+    box-shadow: 0 0 5px #007bff; /* เพิ่มเงาเมื่อโฟกัส */
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px; /* ปรับระยะห่างของปุ่ม Verify OTP จากกล่อง pin-input */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .response-container {
+    margin-top: 20px;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
