@@ -20,7 +20,7 @@ function App() {
         body: JSON.stringify({ pin: pin.join(''), token: storedToken })
       };
 
-      const result = await fetch('https://aqueous-thicket-47905-18fe763d5974.herokuapp.com/verify-otp', options);
+      const result = await fetch('https://verify-277af9cf1cd5.herokuapp.com/verify-otp', options);
       if (!result.ok) {
         throw new Error('Failed to verify OTP');
       }
